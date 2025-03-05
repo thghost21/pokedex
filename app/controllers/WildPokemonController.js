@@ -4,8 +4,10 @@ import { Pop } from "../utils/Pop.js";
 
 export class WildPokemonController {
   constructor() {
+    AppState.on('wildPokemons', this.drawWildPokemons)
     console.log('WILD Pokemon Controller ready');
     this.getWildPokemons()
+
   }
 
   async getWildPokemons() {
@@ -22,7 +24,9 @@ export class WildPokemonController {
   drawWildPokemons() {
     const pokemons = AppState.wildPokemons
     let content = ''
-
+    pokemons.forEach(pokemon => content += pokemon.wildTemplate);
+    const wildElem = document.getElementById('WildTemplate')
+    wildElem.innerHTML = content
   }
 
 

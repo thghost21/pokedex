@@ -3,13 +3,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #dc0a2d;
 }
 
 main {
   flex-grow: 1;
-  display: flex;
-  place-content: center;
-  align-items: center;
+
 }
 
 #pop-toast-container {
@@ -17,4 +16,15 @@ main {
   flex-direction: column;
   justify-content: start;
   align-items: end;
+}
+
+.pokedex {
+  background-color: #29aafd;
+
+  border: solid thick #480417;
+}
+
+hr {
+  margin: 5px;
+  color: black;
 }

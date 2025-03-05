@@ -5,4 +5,13 @@ export class Pokemon {
 
 
   }
+
+  get wildTemplate() {
+    return `
+    <div>
+      <div class="fs-2" type="button"><span class="mdi mdi-pokeball pe-2"></span>${this.name}</div>
+      <hr>
+    </div
+    `
+  }
 }
