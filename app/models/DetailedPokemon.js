@@ -48,7 +48,7 @@ export class DetailedPokemon {
               </div>
             </div>
             <div class="mt-2 text-end">
-              <button class="btn btn-danger"> Catch Pokemon!</button>
+              <button onclick="app.sandboxPokemonsController.saveSandboxPokemons()" class="btn btn-danger"> Catch Pokemon!</button>
             </div>
           </div>
     `;

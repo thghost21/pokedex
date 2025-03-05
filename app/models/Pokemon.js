@@ -17,3 +17,9 @@ export class Pokemon {
 
 
 }
+
+export class SandboxPokemon extends Pokemon {
+  super() {
+
+  }
+}
