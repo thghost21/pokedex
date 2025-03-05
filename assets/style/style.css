@@ -28,3 +28,14 @@ hr {
   margin: 5px;
   color: black;
 }
+
+.pokedexImg {
+  max-height: 30dvh;
+  min-height: 30dvh;
+  max-width: 100%;
+
+}
+
+.pokedexWindow {
+  background-color: #dedede;
+}
